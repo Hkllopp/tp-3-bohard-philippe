@@ -108,6 +108,7 @@ sudo apt install autoreconf
 sudo apt install gettext
 sudo apt install autopoint
 autoreconf -o
+./configure
 sudo apt install checkinstall
 sudo checkinstall
 ```
