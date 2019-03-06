@@ -44,6 +44,10 @@ apt search soduku. Nous n'allons pas lister les paquets mais il y en a 35.
 
 grep "install" var/log/apt/history.log
 
+<h2>Exercice 2</h2>
+
+
+<h2>Exercice 3</h2>
 
 **Ecrire une commande qui affiche ”INSTALLÉ” ou ”NON INSTALLÉ” selon le nom et le statut du package
 spécifié dans cette commande.**
@@ -58,3 +62,9 @@ else
         echo NON INSTALLE 
 fi
 ```
+
+<h2>Exercice 4</h2>
+option -L permet de lister les fichiers installés sur le système.
+dpkg -L coreutils
+
+
