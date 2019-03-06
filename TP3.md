@@ -99,3 +99,15 @@ ls
 cat linuxuprising-ubuntu-java-bionic.list
 ```
 Le fichier contient l'URL du serveur
+
+<h2>Exercice 7</h2>
+
+<h2>Exercice 8</h2>
+```
+sudo apt install autoreconf
+sudo apt install gettext
+sudo apt install autopoint
+autoreconf -o
+sudo apt install checkinstall
+sudo checkinstall
+```
