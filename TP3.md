@@ -91,5 +91,11 @@ Pour conclure, depuis ce gestionnaire nous pouvons supprimer, installer et upgra
 
 
 
+<h2>Exercice 6</h2>
 
-
+```
+cd /etc/apt/sources.list.d
+ls
+cat linuxuprising-ubuntu-java-bionic.list
+```
+Le fichier contient l'URL du serveur
