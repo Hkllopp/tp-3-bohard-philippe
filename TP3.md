@@ -46,15 +46,16 @@ grep "install" var/log/apt/history.log
 
 <h2>Exercice 2</h2>
 la commande :
-```
-wich ls | xargs dpkg -S
-```
-le Script :
-```
-#!/bin/bash
 
-which "$1" | xargs dpkg -S | cut -d':' -f1
-```
+   ```
+  wich ls | xargs dpkg -S
+  ```
+le Script :
+  ```
+  #!/bin/bash
+
+  which "$1" | xargs dpkg -S | cut -d':' -f1
+  ```
 
 <h2>Exercice 3</h2>
 
