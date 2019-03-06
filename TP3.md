@@ -17,18 +17,33 @@ apt list --installed | wc -l
 Ils ne retournent pas le même nombre de paquets car il y a sur la première lignes des mots qui ne sont pas des paquets.
 
 **3. Combien de paquets sont disponibles en téléchargement ?**
+
 apt list | wc -l
 62510
 
 
 **4.Créer un alias ”maj” qui met à jour le système**
+
 La commande pour obtenir les mises à jour est apt-get update.
 Pour l'alias il suffait de faire alias maj='apt-get update' , pour executer notre commande nous devrons seuelement taper maj.
 
 
-**5.A quoi sert le paquet fortunes ? Installez-le.**
+**5. A quoi sert le paquet fortunes ? Installez-le.**
+
+Le paquet fortune permet d'afficher dans le terminal des citations proverbes ...
+Pour l'installer il faut taper la commande : sudo apt install fortunes.
+Pour l'executer il faut taper fortune.
 
 <h2> Exercice 3. </h2>
+
+**6.Quels paquets proposent de jouer au sudoku ?**
+
+apt search soduku. Nous n'allons pas lister les paquets mais il y en a 35.
+
+**7. Lister les derniers paquets installés explicitement avec la commande apt install**
+
+grep "install" var/log/apt/history.log
+
 
 **Ecrire une commande qui affiche ”INSTALLÉ” ou ”NON INSTALLÉ” selon le nom et le statut du package
 spécifié dans cette commande.**
