@@ -76,5 +76,20 @@ fi
 <h2>Exercice 4</h2>
 option -L permet de lister les fichiers installés sur le système.
 dpkg -L coreutils
+[ permet de tester une expression ou une option
+
+<h2>Exercice 5</h2>
+
+Il faut tout d'abord installer aptitude. Aptitude est un gestionnaire de paquet graphique.
+Sudo apt install aptitude
+Il faut lancer aptitude : sudo aptitude
+Nous avons notre interface graphique. Il faut faire CTRL+T pour accéder au menu en haut de l'écran.
+Nous nous rendons dans upgradable package et nous allons dans le menu search pour rechercher emacs.
+Une fois sur le paquet, il suffit d'appuyer sur la touche U pour effectuer l'upgrade.
+Pour quitter nous allons dans le menu action et quit.
+Pour conclure, depuis ce gestionnaire nous pouvons supprimer, installer et upgrader des paquets sur notre système.
+
+
+
 
 
