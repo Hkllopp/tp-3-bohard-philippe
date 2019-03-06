@@ -45,7 +45,16 @@ apt search soduku. Nous n'allons pas lister les paquets mais il y en a 35.
 grep "install" var/log/apt/history.log
 
 <h2>Exercice 2</h2>
+la commande :
+```
+wich ls | xargs dpkg -S
+```
+le Script :
+```
+#!/bin/bash
 
+which "$1" | xargs dpkg -S | cut -d':' -f1
+```
 
 <h2>Exercice 3</h2>
 
