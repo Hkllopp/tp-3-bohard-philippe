@@ -28,4 +28,18 @@ Pour l'alias il suffait de faire alias maj='apt-get update' , pour executer notr
 
 **5.A quoi sert le paquet fortunes ? Installez-le.**
 
+<h2> Exercice 3. </h2>
 
+**Ecrire une commande qui affiche ”INSTALLÉ” ou ”NON INSTALLÉ” selon le nom et le statut du package
+spécifié dans cette commande.**
+```
+#!/bin/bash
+
+retour=$(apt list --installed | grep "$1" | wc -l)
+
+if [ $retour -eq 1 ]; then
+        echo INSTALLE
+else
+        echo NON INSTALLE 
+fi
+```
