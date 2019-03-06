@@ -14,5 +14,18 @@ dpkg -l | wc -l
 apt list --installed | wc -l 
 501
 
-Ils ne retournent pas le même nombre de paquets car
+Ils ne retournent pas le même nombre de paquets car il y a sur la première lignes des mots qui ne sont pas des paquets.
+
+**3. Combien de paquets sont disponibles en téléchargement ?**
+apt list | wc -l
+62510
+
+
+**4.Créer un alias ”maj” qui met à jour le système**
+La commande pour obtenir les mises à jour est apt-get update.
+Pour l'alias il suffait de faire alias maj='apt-get update' , pour executer notre commande nous devrons seuelement taper maj.
+
+
+**5.A quoi sert le paquet fortunes ? Installez-le.**
+
 
